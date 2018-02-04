@@ -2,7 +2,7 @@ setlocal EnableDelayedExpansion
 for /f "tokens=*" %%f in ('C:\Users\franMX\AppData\Local\Android\android-sdk\platform-tools\adb.exe devices') do (
 
 		set devicestr=%%f
-		set apk=%%p
+
 		if "!devicestr!"=="!devicestr:List=!" (
 			for /f "tokens=1" %%d in ("!devicestr!") do (
 				set deviceid=%%d
